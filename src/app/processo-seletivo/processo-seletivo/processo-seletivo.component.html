@@ -2,10 +2,15 @@
     <div class="row m-5">
         <div class="col-12">
             <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Selecione um curso</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
+                <label for="exampleDataList" class="form-label">Selecione um curso</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="SELECIONE UM CURSO">
+                <datalist id="datalistOptions">
+                    <option value="San Francisco">
+                    <option value="New York">
+                    <option value="Seattle">
+                    <option value="Los Angeles">
+                    <option value="Chicago">
+                </datalist>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Nome completo</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -21,7 +26,8 @@
 
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Aceito que a instituição use os dados informados para me contatar</label>
+                    <label class="form-check-label" for="exampleCheck1">Aceito que a instituição use os dados informados
+                        para me contatar</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Avançar</button>
             </form>
